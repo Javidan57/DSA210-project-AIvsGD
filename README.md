@@ -1,18 +1,32 @@
 # The Influence of AI Growth on the Employment and Wage Trends of Graphic Designers  
-DSA210 – Introduction to Data Science  
-Fall 2025–2026 Term Project (Step 2 Submission)  
-Javidan Gasimli (javidan.gasimli@sabanciuniv.edu) (34580)
+## First step of the project
+## Project Overview 
+This project investigates the relationship between the rise of AI technologies (such as **Midjourney**, **DALL·E**, **Canva AI**, and **ChatGPT**) and the employment trends of graphic designers.  
+By analyzing data from the past decade (2015–2024), this project aims to uncover whether the growing popularity of AI-driven creative tools correlates with a decline in employment opportunities or job demand for graphic designers.
 
-## Project Overview  
-This project investigates how the rise of AI-driven creative tools (such as Midjourney, DALL·E, Canva AI, and ChatGPT) relates to employment and wage trends for graphic designers in the United States.  
-Using data from 2015–2024, the analysis examines whether increasing AI popularity corresponds to changes in graphic designer employment levels and wage growth.
+### Key Research Questions
+- How strongly does the rise of AI tools (measured by search trends or adoption metrics) correlate with employment or job postings for graphic designers?
+- Is there a visible impact of AI popularity on designer salaries or wage growth?
+- Can data-driven evidence support the hypothesis that AI automation is transforming the creative job market?
 
-This project follows the data science pipeline:
-1. Data collection  
-2. Data cleaning and preprocessing  
-3. Exploratory data analysis (EDA)  
-4. Hypothesis testing  
+---
 
+## Motivation
+Over the last few years, tools like **Midjourney**, **DALL·E**, **Canva AI**, and **ChatGPT** have changed the way digital art and design are created.  
+Many designers fear that AI-generated content may be replacing human creativity, while others see it as a way to increase efficiency and creativity.
+
+This project aims to analyze real data to understand whether these fears are justified.  
+By studying employment and AI popularity trends together, I want to explore if the creative industry is being disrupted—or just evolving—in response to AI innovations.
+
+---
+
+## Objectives
+- Find out if there is a negative/positive correlation between AI tool adoption and graphic designer employment.  
+- Identify how salaries, job postings, and industry growth have changed over the last 10 years.  
+- Create visualizations that clearly show the trends between AI growth and design jobs.  
+- Discuss whether AI has replaced or reshaped creative work and what the data suggests about the future.
+
+## Second Step of the Project
 ## Data Sources
 
 ### 1. Employment and Wage Data (Primary Dataset)  
