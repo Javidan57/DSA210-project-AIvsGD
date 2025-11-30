@@ -75,8 +75,8 @@ Conclusion: Strong statistical evidence that AI popularity is positively associa
 
 DSA210_Project/  
 │  
-├── AI_data/  # contatins csv dataset regarding AI trends
-├── Graphic_Designer_data/ # contains xlsx datasets regarding Wages and employment
+├── AI_data/  # contatins csv dataset regarding AI trends  
+├── Graphic_Designer_data/ # contains xlsx datasets regarding Wages and employment  
 ├── plots/  
 ├── collection_and_analysis.ipynb  
 └── README.md  
