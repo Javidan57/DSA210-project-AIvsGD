@@ -1,87 +1,85 @@
-# The Influence of AI Growth on the Unemployment Rate of Graphic Designers
+# The Influence of AI Growth on the Employment and Wage Trends of Graphic Designers  
+DSA210 – Introduction to Data Science  
+Fall 2025–2026 Term Project (Step 2 Submission)  
+Javidan Gasimli (javidan.gasimli@sabanciuniv.edu) (34580)
 
-## Project Overview
-This project investigates the relationship between the rise of AI technologies (such as **Midjourney**, **DALL·E**, **Canva AI**, and **ChatGPT**) and the employment trends of graphic designers.  
-By analyzing data from the past decade (2015–2024), this project aims to uncover whether the growing popularity of AI-driven creative tools correlates with a decline in employment opportunities or job demand for graphic designers.
+## Project Overview  
+This project investigates how the rise of AI-driven creative tools (such as Midjourney, DALL·E, Canva AI, and ChatGPT) relates to employment and wage trends for graphic designers in the United States.  
+Using data from 2015–2024, the analysis examines whether increasing AI popularity corresponds to changes in graphic designer employment levels and wage growth.
 
-### Key Research Questions
-- How strongly does the rise of AI tools (measured by search trends or adoption metrics) correlate with the decrease in employment or job postings for graphic designers?
-- Is there a visible impact of AI popularity on designer salaries or wage growth?
-- Can data-driven evidence support the hypothesis that AI automation is transforming the creative job market?
-
----
-
-## Motivation
-Over the last few years, tools like **Midjourney**, **DALL·E**, **Canva AI**, and **ChatGPT** have changed the way digital art and design are created.  
-Many designers fear that AI-generated content may be replacing human creativity, while others see it as a way to increase efficiency and creativity.
-
-This project aims to analyze real data to understand whether these fears are justified.  
-By studying employment and AI popularity trends together, I want to explore if the creative industry is being disrupted—or just evolving—in response to AI innovations.
-
----
-
-## Objectives
-- Find out if there is a negative correlation between AI tool adoption and graphic designer employment.  
-- Identify how salaries, job postings, and industry growth have changed over the last 10 years.  
-- Create visualizations that clearly show the trends between AI growth and design jobs.  
-- Discuss whether AI has replaced or reshaped creative work and what the data suggests about the future.
-
----
+This project follows the data science pipeline:
+1. Data collection  
+2. Data cleaning and preprocessing  
+3. Exploratory data analysis (EDA)  
+4. Hypothesis testing  
 
 ## Data Sources
 
-### 1. Employment and Wage Data
-- **Source:** U.S. Bureau of Labor Statistics (BLS)  
-- **URL:** https://www.bls.gov/oes/current/oes271024.htm  
-- **Description:** Provides yearly employment, wage, and industry data for “Graphic Designers” (occupation code 27-1024) between 2012 and 2024.  
-- **Goal:** Analyze job counts, growth rates, and salary trends.
+### 1. Employment and Wage Data (Primary Dataset)  
+Source: U.S. Bureau of Labor Statistics (BLS)  
+URL: https://www.bls.gov/oes/current/oes271024.htm  
+Description:  
+Yearly state-level statistics for the occupation "Graphic Designers" (27-1024), including:  
+- Total employment  
+- Median annual wages  
+- Industry-level data  
 
-### 2. AI Popularity and Adoption Data
-- **Source:** Google Trends  
-- **Keywords:** “AI art”, “Midjourney”, “DALL·E”, “Canva AI”, “AI design tools”  
-- **Description:** Tracks the popularity and adoption rate of AI creative tools over time.  
-- **Goal:** Build an AI Popularity Index based on normalized search interest from 2015–2024.
+Files used:  
+Graphic_Designer_data/
 
-### Enrichment
-- Additional Kaggle datasets related to AI usage or creative industry trends.
+### 2. AI Popularity Data (Enrichment Dataset)  
+Source: Google Trends  
+Keywords: AI Art, DALL·E, Midjourney, Canva AI, ChatGPT  
 
----
+Files used:  
+AI_data/
 
-## Data Collection Plan
+## Step 2: Data Collection, Cleaning, and EDA
 
-### 1. Collect Employment Data
-**Tool:** Python + pandas  
-- Download historical employment and wage CSV files from BLS.  
-- Extract columns such as *Year*, *Employment Count*, *Average Salary*.
+### Cleaning Methods  
+- Normalized inconsistent numeric formats  
+- Selected graphic designer rows (OCC_CODE = 27-1024)  
+- Extracted year information  
+- Computed national total employment  
+- Calculated national median wage  
+- Averaged monthly Google Trends interest into yearly scores  
+- Merged datasets on "Year"  
 
-### 2. Collect AI Popularity Data
-**Tool:** Google Trends + Python  
-- Export CSV files for AI-related search terms.  
-- Compute yearly averages to create an AI Popularity Index.
+### Final Merged DataFrame Columns  
+Year, Employment, Median_Wage, AI_Popularity, Emp_Change_%, Wage_Change_%, AI_Change_%
 
-### 3. Merge and Clean Data
-**Tool:** pandas  
-- Merge both datasets by year (2015–2024).  
-- Handle missing values or inconsistent data.  
-- Save as a single processed CSV.
+## EDA Visualizations
 
-### 4. Analyze and Visualize
-- Use line graphs to show trends in AI popularity vs. employment.  
-- Calculate the correlation coefficient between AI growth and employment decline.  
-- Visualize findings with scatter plots, regression lines, and heat maps.
+![Employment Over Time](plots/graph_empl_over_time.png)
+![Median Wage Over Time](plots/graph_med_wage_time.png)
+![AI Popularity Over Time](plots/ai_popul_over_time.png)
+![Normalized Trends](plots/empl_wage_aipop.png)
+![AI vs Employment Scatter](plots/ai_vs_graph_empl.jpg)
+![AI vs Wage Scatter](plots/ai_vs_graph_wage.jpg)
 
----
+## Hypothesis Tests
 
-## Expected Outcomes
-- A correlation analysis showing whether AI adoption negatively affects graphic designer employment.  
-- Time-series plots that visualize changes in both AI popularity and job trends.  
-- Insightful visualizations showing how creative industries adapt to technological shifts.  
-- A short discussion on ethical implications and the future of creative work in the age of AI.
+### AI Popularity vs Employment  
+Conclusion: No significant statistical evidence that AI popularity affects employment levels.
 
----
+### AI Popularity vs Wage  
+Conclusion: Strong statistical evidence that AI popularity is positively associated with wage increases.
 
-## Tools
-- **Programming Language:** Python  
-- **Libraries:** pandas, numpy, matplotlib, seaborn, scipy  
-- **Environment:** Jupyter Notebook  
-- **Data Sources:** BLS, Google Trends, Kaggle
+## Key Findings  
+1. No significant impact of AI growth on employment levels.  
+2. Strong positive relationship between AI popularity and median wages.  
+3. All metrics show stable or increasing trends.  
+4. AI may enhance designer productivity and value.
+
+## Repository Structure
+
+DSA210_Project/  
+│  
+├── AI_data/  # contatins csv dataset regarding AI trends
+├── Graphic_Designer_data/ # contains xlsx datasets regarding Wages and employment
+├── plots/  
+├── collection_and_analysis.ipynb  
+└── README.md  
+
+## Requirements  
+`pandas, numpy, matplotlib, seaborn, scipy, openpyxl`
