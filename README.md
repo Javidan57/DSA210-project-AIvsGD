@@ -195,7 +195,7 @@ DSA210_Project/
 ├── plots/  
 ├── 1_collect_data.ipynb  
 ├── step3_ml_model.ipynb
-└── README.md  
+├── README.md  
 
 ## Requirements  
 `pandas, numpy, matplotlib, seaborn, scipy, openpyxl, scikit-learn`
