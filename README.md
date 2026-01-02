@@ -183,14 +183,7 @@ Findings:
 
 ---
 
-## Notes on Method Selection
 
-Advanced machine learning models such as random forests, neural networks, or polynomial regression were intentionally avoided due to:
-- Limited dataset size  
-- Risk of overfitting  
-- Reduced interpretability  
-
-All selected methods are aligned with DSA210 course material and project guidelines.
 
 
 ## Repository Structure
@@ -200,7 +193,8 @@ DSA210_Project/
 ├── AI_data/  # contatins csv dataset regarding AI trends  
 ├── Graphic_Designer_data/ # contains xlsx datasets regarding Wages and employment  
 ├── plots/  
-├── collection_and_analysis.ipynb  
+├── 1_collect_data.ipynb  
+├── step3_ml_model.ipynb
 └── README.md  
 
 ## Requirements  
