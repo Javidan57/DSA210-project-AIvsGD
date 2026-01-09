@@ -183,19 +183,59 @@ Findings:
 
 ---
 
+## Limitations and Future Work
 
+### Limitations
+- The dataset contains only annual observations from 2015–2024, resulting in a relatively small sample size.
+- AI adoption is approximated using Google Trends data, which reflects public interest rather than direct usage or adoption by designers.
+- Employment and wage data are aggregated at the national level and may hide regional or industry-specific differences.
+- The analysis focuses on correlation and association; causal conclusions cannot be drawn.
+
+### Future Work
+- Incorporate job posting data from platforms such as LinkedIn or Indeed to better measure labor demand.
+- Use higher-frequency data (monthly or quarterly) if available to improve time-series analysis.
+- Include additional explanatory variables such as economic indicators or industry-specific growth metrics.
+- Apply time-series forecasting models if longer historical data becomes available.
+
+
+## Reproducibility
+
+To reproduce the analysis:
+
+1. Install required Python dependencies:
+   pip install -r requirements.txt
+
+2. Run the notebooks in the following order:
+   - 1_collect_data.ipynb
+   - step3_ml_model.ipynb
+
+
+## AI Usage Declaration
+
+In accordance with academic integrity guidelines, the use of AI-assisted tools is disclosed below:
+
+- **Tool Used:** Large Language Models (e.g., ChatGPT)
+- **Purpose:**
+  - Assisting with code debugging and clarification of data science concepts.
+  - Improving documentation clarity and organization in the README file.
+- **Verification:** All data processing steps, machine learning models, result interpretation, and final conclusions were designed, implemented, and verified by me.
 
 
 ## Repository Structure
 
-DSA210_Project/  
-│  
-├── AI_data/  # contatins csv dataset regarding AI trends  
-├── Graphic_Designer_data/ # contains xlsx datasets regarding Wages and employment  
-├── plots/  
-├── 1_collect_data.ipynb  
-├── step3_ml_model.ipynb
-├── README.md  
+DSA210_Project/
+│
+├── AI_data/                      # raw Google Trends CSV files (not tracked; download separately)
+├── Graphic_Designer_data/         # raw BLS XLSX files (not tracked; download separately)
+├── plots/                         # saved figures and visualizations
+│
+├── 1_collect_data.ipynb           # data collection, cleaning, EDA, hypothesis testing
+├── step3_ml_model.ipynb           # machine learning models (regression, PCA)
+├── final_dataset.csv              # processed dataset used for ML models
+├── requirements.txt               # Python dependencies
+└── README.md
+
+
 
 ## Requirements  
-`pandas, numpy, matplotlib, seaborn, scipy, openpyxl, scikit-learn`
+Python dependencies are listed in `requirements.txt`.
