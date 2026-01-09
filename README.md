@@ -163,7 +163,7 @@ Findings:
 ![Simple Linear Regression: AI vs Wage](plots/AI_vs_wage_linear_reg.png)  
 ![Multiple Linear Regression: Employment Actual vs Predicted](plots/Actual_vs_Predicted_emp_multreg.png)  
 ![Multiple Linear Regression: Wage Actual vs Predicted](plots/Actual_vs_Predicted_wage_multreg.png)  
-![PCA Projection](plots/Emp_wage_ai_PCA.png.png)  
+![PCA Projection](plots/Emp_wage_ai_PCA.png)  
 
 ---
 
