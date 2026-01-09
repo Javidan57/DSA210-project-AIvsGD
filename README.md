@@ -219,6 +219,23 @@ In accordance with academic integrity guidelines, the use of AI-assisted tools i
   - Assisting with code debugging and clarification of data science concepts.
   - Improving documentation clarity and organization in the README file.
 - **Verification:** All data processing steps, machine learning models, result interpretation, and final conclusions were designed, implemented, and verified by me.
+- 
+
+## Dataset Availability
+
+The raw datasets used in this project are not included in the GitHub repository due to file size constraints.
+
+- **BLS Employment and Wage Data (XLSX):**  
+  Downloadable from the U.S. Bureau of Labor Statistics:  
+  https://www.bls.gov/oes/current/oes271024.htm
+  [Download BLS datasets (Google Drive)](https://drive.google.com/drive/folders/1652X_GuMMzX-1pWKzu1vS3CbyvqChwxV?usp=sharing)
+
+- **Google Trends AI Popularity Data (CSV):**  
+  Downloadable from Google Trends using the following keywords:  
+  AI Art, DALL·E, Midjourney, Canva AI, ChatGPT
+  [Download AI popularity datasets (Google Drive)](https://drive.google.com/drive/folders/1f4JwKAAtu6ZvLWix2eOld-hb7FVEERo2?usp=sharing)
+
+
 
 
 ## Repository Structure
