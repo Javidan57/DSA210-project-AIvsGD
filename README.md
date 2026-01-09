@@ -223,11 +223,12 @@ In accordance with academic integrity guidelines, the use of AI-assisted tools i
 
 ## Repository Structure
 
+```text
 DSA210_Project/
 │
 ├── AI_data/                      # raw Google Trends CSV files (not tracked; download separately)
 ├── Graphic_Designer_data/         # raw BLS XLSX files (not tracked; download separately)
-├── plots/                         # saved figures and visualizations
+├── plots/                        # saved figures and visualizations
 │
 ├── 1_collect_data.ipynb           # data collection, cleaning, EDA, hypothesis testing
 ├── step3_ml_model.ipynb           # machine learning models (regression, PCA)
