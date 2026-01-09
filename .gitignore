@@ -1,2 +1,3 @@
-*.csv
-*.xlsx
+# Ignore raw datasets
+AI_data/*.csv
+Graphic_Designer_data/*.xlsx
